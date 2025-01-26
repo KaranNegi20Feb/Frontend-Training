@@ -1,0 +1,14 @@
+[
+    {
+        "foldername":"hello",
+        "items":["jpeg","kkk","yoyo"]
+    },
+    {
+        "foldername":"hello",
+        "items":["jpeg","kkk","yoyo","jpeg","kkk","yoyo"]
+    },
+    {
+        "foldername":"hello",
+        "items":["jpeg","jpeg","kkk","yoyo"]
+    }
+]
