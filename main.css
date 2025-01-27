@@ -1,0 +1,81 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center the content vertically */
+    min-height: 100vh; /* Ensure the body takes full viewport height */
+    margin: 0;
+    box-sizing: border-box; /* Include padding and border in width/height calculations */
+    background-color: #f7f7f7; /* Light background for contrast */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 50%; /* Increased width for better visual representation */
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 8px; /* Rounded corners for the container */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 15px;
+}
+
+.folder-lists {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 10px 0;
+    border-left: 3px solid #bbb; /* Vertical line to indicate nesting */
+    border-radius: 6px;
+}
+
+.folder-name {
+    font-weight: bold;
+    background-color: #e3f2fd;
+    padding: 8px 12px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Align arrow to the right */
+}
+
+.folder-name::after {
+    content: '▶'; /* Right arrow by default */
+    font-size: 12px;
+    margin-left: 8px;
+    transition: transform 0.3s ease; /* Smooth rotation */
+}
+
+.folder-name.open::after {
+    transform: rotate(90deg); /* Rotate arrow on open */
+}
+
+.folder {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+    margin-top: 10px;
+}
+
+
+.item {
+    padding: 8px 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px; /* Rounded corners for items */
+    background-color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.item:hover {
+    background-color: #f1f1f1; /* Slightly darker gray on hover */
+}
